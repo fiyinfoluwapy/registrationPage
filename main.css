@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(images/bg-intro-desktop.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+   
+}
+
+h1{
+    font-weight: 700;
+}
+p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+main{
+    background: rgba(243, 92, 117, 0.8);
+    opacity: 0.8;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+   
+
+.col-1{
+    flex-basis: 50%;
+    flex-grow: 1;
+    color: #333;
+    padding: 70px;
+    margin: auto;
+}
+.col-1 h1{
+    font-weight: 700;
+    font-size:42px;
+    color: #f1f1f1;
+}
+.col-1 p{
+    Font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #f1f1f1;
+    word-spacing: 2px;
+}
+.col-2{
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 40px 80px;
+    background: transparent;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin: auto;
+
+}
+.blue-btn{
+    background-color: hsl(248, 32%, 49%);
+    color:white;
+    padding: 16px 20px;
+    margin: auto auto 16px auto;
+    border:none;
+    cursor:pointer;
+    width:100%;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 5 10px transparent lightgray;
+}
+.container{
+    padding: 20px;
+    background-color: white;
+    margin: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    width:100%;
+    padding:15px;
+    margin:5px 0 22px 0;
+    display:inline-block;
+    background:#f1f1f1;
+    border-radius: 4px;
+
+}
+
+
+input:not(:placeholder-shown):not(:focus):invalid {
+    border: 2px solid red;
+  }
+
+
+
+
+.registerbtn{
+    background-color:hsl(154, 59%, 51%);
+    color:white;
+    padding: 16px 20px;
+    margin:8px 0;
+    border:none;
+    cursor:pointer;
+    width:100%;
+    border-radius: 4px;
+    
+} 
+.registerbtn:hover{
+    opacity: 1;
+}
+a {
+    color: hsl(0, 100%, 74%);
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+.container-terms{
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: white;
+    color: darkgray;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 5px;
+    box-shadow: 15 25px  lightgray;
+}
+
+
+@media (max-width: 700px){
+   
+    .col-1, .col-2{
+        flex-direction: column;
+    }
+    
+    main{
+        background-image: hsl(0, 100%, 74%),url(images/bg-intro-mobile.png);
+        background-size: fill;
+        background-position: center;
+        width: 375px;
+        min-height: 100vh;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
