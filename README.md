@@ -1,2 +1,2 @@
 # registrationPage
-https://pawsvlad.github.io/registrationPage/
+ https://fiyinfoluwapy.github.io/registrationPage/
